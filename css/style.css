@@ -1,7 +1,9 @@
 
+/* CURRICULO HMTL*/
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #e2f3ff;
+    background-color: #e8faea;
     color: rgb(0, 77, 38);
     line-height: 1.6;
     margin: 30px;
@@ -27,7 +29,7 @@ img{
     width: 150px;
     height: 200px;
     border-radius: 20%;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -44,6 +46,44 @@ td, th {
     padding: 5px;
     text-align: center;
 
+}
+
+
+/* INDEX HTML */
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    background-color: #006928;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.menu li a {
+    color: rgb(224, 145, 55);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: rgb(0, 247, 205);
+    
+}
+
+.menu li a.ativo {
+    color: chocolate;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
