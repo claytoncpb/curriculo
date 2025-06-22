@@ -1,7 +1,7 @@
 
 /* CURRICULO HMTL*/
 
-body {
+/* body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #e8faea;
     color: rgb(0, 77, 38);
@@ -9,7 +9,7 @@ body {
     margin: 30px;
 }
 
-h1{
+ h1{
     text-align: center;
     color: rgb(0, 36, 2);
 }
@@ -23,7 +23,7 @@ h1{
 
 }
 
-img{
+/*img{
     display: block;
     margin: 10px auto;
     width: 150px;
@@ -46,10 +46,24 @@ td, th {
     padding: 5px;
     text-align: center;
 
+} */
+
+
+/* GERAL */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e8faea;
+    color: rgb(0, 77, 38);
+    line-height: 1.6;
+    margin: 30px;
 }
 
 
-/* INDEX HTML */
+
+
+
+/* MENU INDEX */
 
 .menu {
     list-style: none;
@@ -86,5 +100,67 @@ td, th {
     text-decoration: underline;
 }
 
+.imagem-perfil {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.imagem-perfil img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* INICIO */
+
+.container-inicio h1 {
+    text-align: center;
+}
+
+
+
+
+
+/* MENU EXPERIÊNCIA */
+
+.container-experiencia {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.container-experiencia h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;    
+
+}
+
+.exp-item {
+    background-color: #d1f5d5;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;    
+
+}
+
+.exp-item h2 {
+    margin-top: 0;
+    font-size: 24px;
+
+}
+
+.exp-item p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
 
 
