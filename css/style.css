@@ -49,6 +49,12 @@ td, th {
 } */
 
 
+
+
+
+
+
+
 /* GERAL */
 
 body {
@@ -100,6 +106,12 @@ body {
     text-decoration: underline;
 }
 
+
+
+
+
+/* IMAGEM DE PERFIL*/
+
 .imagem-perfil {
     display: flex;
     justify-content: center;
@@ -117,10 +129,17 @@ body {
 
 
 
-/* INICIO */
+/* MENU INICIO */
 
 .container-inicio h1 {
     text-align: center;
+}
+
+.container-inicio p {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;   
+
 }
 
 
@@ -164,3 +183,80 @@ body {
 }
 
 
+
+
+
+/* MENU QUALIFICAÇÕES */
+
+.main-qualificacoes h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px; 
+}
+
+.container-qualificacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+
+/* CARD INDIVIDUAL */
+.card {
+    background-color: #d1f5d5;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 285px;
+
+}
+
+/* MENU CONTATO */
+
+.titulo-pagina-fc {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+
+}
+
+.container-contato {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #d1f5d5;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.form-contato button {
+    padding: 5px 10px; 
+    background-color: #49a86d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
