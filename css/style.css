@@ -65,6 +65,12 @@ body {
     margin: 30px;
 }
 
+.titulo-pagina {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px; 
+}
+
 
 
 
@@ -110,6 +116,42 @@ body {
 
 
 
+/* FOOTER */
+
+.rodape {
+    background-color: #006928;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+/* ICONES REDES SOCIAIS */
+
+.icones-sociais {
+    margin-top: 10px;
+}
+
+.icones-sociais a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.icones-sociais img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.icones-sociais img:hover {
+    transform: scale(1.2);
+}
+
+
+
 /* IMAGEM DE PERFIL*/
 
 .imagem-perfil {
@@ -131,10 +173,6 @@ body {
 
 /* MENU INICIO */
 
-.container-inicio h1 {
-    text-align: center;
-}
-
 .container-inicio p {
     max-width: 900px;
     margin: 40px auto;
@@ -152,13 +190,6 @@ body {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 10px;
-}
-
-.container-experiencia h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;    
-
 }
 
 .exp-item {
@@ -188,12 +219,6 @@ body {
 
 /* MENU QUALIFICAÇÕES */
 
-.main-qualificacoes h1 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px; 
-}
-
 .container-qualificacoes {
     display: flex;
     flex-wrap: wrap;
@@ -211,18 +236,11 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    width: 285px;
+    width: 400px;
 
 }
 
 /* MENU CONTATO */
-
-.titulo-pagina-fc {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-
-}
 
 .container-contato {
     max-width: 600px;
