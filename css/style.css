@@ -58,11 +58,18 @@ td, th {
 /* GERAL */
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #e8faea;
     color: rgb(0, 77, 38);
     line-height: 1.6;
-    margin: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
 }
 
 .titulo-pagina {
@@ -72,7 +79,16 @@ body {
 }
 
 
+/* MENU FIXO */
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
 
 
 /* MENU INDEX */
@@ -84,9 +100,11 @@ body {
     gap: 30px;
     background-color: #006928;
     padding: 15px;
-    border-radius: 15px;
+    margin: 0;
 
 }
+
+
 
 .menu li a {
     color: rgb(255, 255, 255);
@@ -113,76 +131,53 @@ body {
 }
 
 
+/* BANNER PAGINA INDEX */
 
-
-
-/* FOOTER */
-
-.rodape {
-    background-color: #006928;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: 40px;
-    font-size: 14px;
-    border-radius: 10px 10px 0 0;
-    
-}
-
-/* ICONES REDES SOCIAIS */
-
-.icones-sociais {
-    margin-top: 10px;
-}
-
-.icones-sociais a {
-    margin: 0 8px;
-    display: inline-block;
-}
-
-.icones-sociais img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s;
-}
-
-.icones-sociais img:hover {
-    transform: scale(1.2);
-}
-
-
-
-/* IMAGEM DE PERFIL*/
-
-.imagem-perfil {
+.banner-apresentacao {
+    background-color: #d1f5d5;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    gap: 40px;
+    padding: 60px 20px;
+    border-radius: 15px;
+    margin: 30px;
+
+    background-image: url(../IMAGENS/BANNER-TESTEED.png);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.titulo-banner {
+    font-size: 36px;
+    color: rgb(186, 241, 219);
+
 }
 
 .imagem-perfil img {
-    width: 150px;
-    height: 200px;
+    width: 120px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px #818181;
+
 }
-
-
 
 
 
 /* MENU INICIO */
 
+.container-inicio {
+    flex: 1;
+}
+
 .container-inicio p {
     max-width: 900px;
     margin: 40px auto;
-    text-align: center;   
+    text-align: center; 
+    padding: 0 10px;  
 
 }
-
-
-
-
 
 /* MENU EXPERIÊNCIA */
 
@@ -242,6 +237,10 @@ body {
 
 /* MENU CONTATO */
 
+.pagina-contato {
+    flex: 1;
+}
+
 .container-contato {
     max-width: 600px;
     margin: 40px auto;
@@ -277,4 +276,37 @@ body {
     font-weight: bold;
     cursor: pointer;
     
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: #006928;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0;  
+    
+}
+
+/* ICONES REDES SOCIAIS */
+
+.icones-sociais {
+    margin-top: 10px;
+}
+
+.icones-sociais a {
+    margin: 0 8px;
+    display: inline-block;
+}
+
+.icones-sociais img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.icones-sociais img:hover {
+    transform: scale(1.2);
 }
