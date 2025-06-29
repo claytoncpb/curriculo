@@ -13,6 +13,7 @@
     <body>  
         <header class="fixed">
             <nav>
+                <button class="menu-toggle">&#9776</button>
                 <ul class="menu">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="experiencia.html">Experiência</a></li>
@@ -112,5 +113,14 @@
             </div>
             
         </footer>
+        
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menu = document.querySelector('.menu');
+
+            menuToggle.addEventListener('click', () => {
+                menu.classList.toggle('show');
+            });
+        </script>
     </body>
 </html>
