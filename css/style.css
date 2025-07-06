@@ -334,12 +334,6 @@ body {
 
 /* MENU HAMBURGUER */
 
-.menu-toggle.close-icon {
-    font-size: 80px;
-    transform: translateY(-10px);
-    
-}
-
 .menu-toggle {
     display: none;
     font-size: 50px;
@@ -347,8 +341,43 @@ body {
     border: none;
     color: rgb(255, 255, 255);
     cursor: pointer;
+
+    position: relative;
+    width: 40px;
+    height: 60px;
+    z-index: 1100;
 }
 
+
+/* Estilo das 3 Barrinhas */
+
+.menu-toggle span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 8px 5px;
+    border-radius: 2px;
+    transition: 0.4s;
+
+}
+
+/* Quando botão estiver ativo */
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(11px, -11px);
+}
+
+
+/*  */
 .menu-toggle:focus {
     outline: none;
 }
@@ -359,6 +388,7 @@ body {
         display: block;
     }
 }
+
  
 /* MENU MOBILE RESPONSIVIDADE */
 
@@ -368,17 +398,24 @@ body {
         align-items: center;
         gap: 15px;
 
-        display: none;
+        
+        transform: scaleY(0); 
+        transform-origin: top;  
+        opacity: 0;
         background-color: #006928;
         position: absolute;
         top: 58px;
         left: 0;
         width: 100%;
-        padding: 20px 0;
+        padding: 0;
+        transition: transform 0.4s, opacity 0.4s ease-in-out;
     }
 
     .menu.show {
-        display: flex;
+        
+        transform: scaleY(1);
+        opacity: 1;
+        padding: 20px 0;
     }
 }
 

@@ -5,14 +5,8 @@ const menuToggle = document.querySelector('.menu-toggle');
 
         menuToggle.addEventListener('click',() => {
             menu.classList.toggle('show');
-        
-        if (menu.classList.contains('show')) {
-            menuToggle.classList.add('close-icon');
-            menuToggle.innerHTML = '&times;'; 
-        } else {
-            menuToggle.classList.remove('close-icon');
-            menuToggle.innerHTML = '&#9776;';
-        }
+            menuToggle.classList.toggle('active');
+       
         });
 
         document.addEventListener('click',(event) => {
@@ -21,5 +15,6 @@ const menuToggle = document.querySelector('.menu-toggle');
 
             if (!isClickInsideMenu && !isClickOnToggle) {
                 menu.classList.remove('show');
+                menuToggle.classList.remove('active');
             }
         });
